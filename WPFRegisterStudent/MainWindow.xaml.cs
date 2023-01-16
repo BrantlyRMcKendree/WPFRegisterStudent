@@ -89,6 +89,8 @@ namespace WPFRegisterStudent
 
         private void button_Click_Remove(object sender, RoutedEventArgs e)
         {
+            choice = (Course)(this.comboBox.SelectedItem); // Creates a selected item to be tested and validated.
+
             if (choice.IsRegisteredAlready() == true)
             {
                 this.listBox.Items.Remove(choice);
